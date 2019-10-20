@@ -1,23 +1,13 @@
-x = c(3.1, 2.9, 2.8, 3.0, 2.7, 3.1, 2.6, 2.8, 2.9, 3.0)
-y = c(3.5, 3.0, 3.1, 3.2, 2.9, 3.4, 3.0, 3.4, 2.8, 3.4)
+x=rnorm(10,mean=100,sd=5)
+y=rnorm(20,mean=105,sd=5)
+t.test(x,y,var.equal=TRUE)
+qt(p=0.05/2,df=28,lower.tail=FALSE)
 
-t.test(x,y, var.equal = TRUE)
+#Student t- test
 
-qt(p = 0.05, df = 18, lower.tail = FALSE)
+x=rnorm(10,mean=100,sd=5)
+y=rnorm(20,mean=105,sd=5)
+t.test(x,y,var.equal=FALSE)
+qt(p=0.05/2,df=28,lower.tail=FALSE)
 
-
-h = c(28, 32, 29, 39, 31,35, 25, 36, 35, 26, 29, 34, 30)
-
-o = c(42, 41, 38, 42, 41, 41, 40, 44, 32, 37, 41, 37, 34, 31)
-x = sort(h)
-
-
-
-for(i in length(x)){
-  print(i)
-  print(x[i])
-}
-
-
-
-
+#Welch test
