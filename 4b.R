@@ -5,3 +5,4 @@ summary(birthwt)
 boxplot(age~ht, data = birthwt, range= 0, ylab = "ageyear", xlab="Height")
 # one
 # u\
+# ui
